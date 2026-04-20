@@ -1,0 +1,158 @@
+import '../models/product.dart';
+
+class ProductData {
+  static List<Product> getProducts() {
+    final List<Map<String, dynamic>> jsonData = [
+      {
+        "id": 1,
+        "name": "iPhone 15 Pro",
+        "description": "Titanium tasarım, A17 Pro çip, 48MP ana kamera. Akıllı telefonların geleceğini deneyimleyin.",
+        "price": 999.0,
+        "imageUrl": "https://wantapi.com/assets/images/iphone.png",
+        "category": "iPhone",
+        "rating": 4.8,
+      },
+      {
+        "id": 2,
+        "name": "iPhone 15",
+        "description": "Dynamic Island, 48MP kamera, A16 Bionic çip. USB-C bağlantısı ile yeni nesil deneyim.",
+        "price": 799.0,
+        "imageUrl": "https://wantapi.com/assets/images/iphone_pink.png",
+        "category": "iPhone",
+        "rating": 4.6,
+      },
+      {
+        "id": 3,
+        "name": "iPhone SE",
+        "description": "A15 Bionic çip, Touch ID, 4.7 inç Retina HD ekran. En uygun fiyatlı iPhone deneyimi.",
+        "price": 429.0,
+        "imageUrl": "https://wantapi.com/assets/images/iphone_se.png",
+        "category": "iPhone",
+        "rating": 4.2,
+      },
+      {
+        "id": 4,
+        "name": "MacBook Pro 16\"",
+        "description": "M3 Max çip, Liquid Retina XDR ekran, 22 saat pil ömrü. Profesyoneller için tasarlandı.",
+        "price": 2499.0,
+        "imageUrl": "https://wantapi.com/assets/images/macbook.png",
+        "category": "Mac",
+        "rating": 4.9,
+      },
+      {
+        "id": 5,
+        "name": "MacBook Air 15\"",
+        "description": "M2 çip, 15.3 inç Liquid Retina ekran, fansız tasarım. İnanılmaz ince ve hafif.",
+        "price": 1299.0,
+        "imageUrl": "https://wantapi.com/assets/images/macbook_air.png",
+        "category": "Mac",
+        "rating": 4.7,
+      },
+      {
+        "id": 6,
+        "name": "MacBook Air 13\"",
+        "description": "M2 çip, 18 saat pil ömrü, 1080p FaceTime kamera. Dünyanın en çok satan laptopu.",
+        "price": 1099.0,
+        "imageUrl": "https://wantapi.com/assets/images/macbook_starlight.png",
+        "category": "Mac",
+        "rating": 4.6,
+      },
+      {
+        "id": 7,
+        "name": "iMac",
+        "description": "M3 çip, 24 inç 4.5K Retina ekran, 7 canlı renk seçeneği. Hepsi bir arada bilgisayar.",
+        "price": 1299.0,
+        "imageUrl": "https://wantapi.com/assets/images/imac.png",
+        "category": "Mac",
+        "rating": 4.5,
+      },
+      {
+        "id": 8,
+        "name": "iPad Pro 12.9\"",
+        "description": "M2 çip, Liquid Retina XDR ekran, Apple Pencil hover desteği. Profesyonel tablet.",
+        "price": 1099.0,
+        "imageUrl": "https://wantapi.com/assets/images/ipad.png",
+        "category": "iPad",
+        "rating": 4.7,
+      },
+      {
+        "id": 9,
+        "name": "iPad Air",
+        "description": "M1 çip, 10.9 inç Liquid Retina ekran, Touch ID. Hafif, güçlü ve çok yönlü.",
+        "price": 599.0,
+        "imageUrl": "https://wantapi.com/assets/images/ipad_air.png",
+        "category": "iPad",
+        "rating": 4.5,
+      },
+      {
+        "id": 10,
+        "name": "iPad Mini",
+        "description": "A15 Bionic çip, 8.3 inç ekran, Center Stage kamera. Avucunuza sığan güç.",
+        "price": 499.0,
+        "imageUrl": "https://wantapi.com/assets/images/ipad_mini.png",
+        "category": "iPad",
+        "rating": 4.4,
+      },
+      {
+        "id": 11,
+        "name": "Apple Watch Ultra 2",
+        "description": "Titanyum kasa, 3000 nit ekran, çift frekanslı GPS. Macera için tasarlandı.",
+        "price": 799.0,
+        "imageUrl": "https://wantapi.com/assets/images/watch.png",
+        "category": "Watch",
+        "rating": 4.8,
+      },
+      {
+        "id": 12,
+        "name": "Apple Watch Series 9",
+        "description": "S9 SiP çip, çift dokunma özelliği, karbon nötr seçenek.",
+        "price": 399.0,
+        "imageUrl": "https://wantapi.com/assets/images/watch_series9.png",
+        "category": "Watch",
+        "rating": 4.6,
+      },
+      {
+        "id": 13,
+        "name": "AirPods Pro",
+        "description": "H2 çip, Adaptif Ses, 2x Aktif Gürültü Engelleme. Spatial Audio.",
+        "price": 249.0,
+        "imageUrl": "https://wantapi.com/assets/images/airpods.png",
+        "category": "Aksesuar",
+        "rating": 4.7,
+      },
+      {
+        "id": 14,
+        "name": "AirPods Max",
+        "description": "Yüksek kaliteli ses, Aktif Gürültü Engelleme, Spatial Audio.",
+        "price": 549.0,
+        "imageUrl": "https://wantapi.com/assets/images/airpods_max.png",
+        "category": "Aksesuar",
+        "rating": 4.5,
+      },
+      {
+        "id": 15,
+        "name": "Apple Vision Pro",
+        "description": "Mekansal bilgisayar, micro-OLED ekran, göz-el-ses kontrolü.",
+        "price": 3499.0,
+        "imageUrl": "https://wantapi.com/assets/images/vision_pro.png",
+        "category": "Aksesuar",
+        "rating": 4.9,
+      },
+      {
+        "id": 16,
+        "name": "HomePod",
+        "description": "Yüksek kaliteli ses, oda algılama, akıllı ev merkezi.",
+        "price": 299.0,
+        "imageUrl": "https://wantapi.com/assets/images/homepod.png",
+        "category": "Aksesuar",
+        "rating": 4.3,
+      },
+    ];
+
+    return jsonData.map((json) => Product.fromJson(json)).toList();
+  }
+
+  static List<String> getCategories() {
+    return ['Tümü', 'iPhone', 'Mac', 'iPad', 'Watch', 'Aksesuar'];
+  }
+}
