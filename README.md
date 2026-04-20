@@ -29,6 +29,7 @@ Mini Katalog, Flutter ile geliştirilmiş bir e-ticaret katalog uygulamasıdır.
 5. Uygulamayı çalıştırın: `flutter run`
 
 ## Proje Yapısı
+```
 lib/
 ├── main.dart
 ├── models/
@@ -40,4 +41,5 @@ lib/
 │   ├── product_detail_screen.dart
 │   └── cart_screen.dart
 └── widgets/
-└── product_card.dart
+    └── product_card.dart
+```
